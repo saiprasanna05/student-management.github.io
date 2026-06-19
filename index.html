@@ -37,9 +37,9 @@
                             <div href="#" class="current" onclick="showfirststandard()">
                                 <p>Current Students</p>
                             </div>
-                            <div href="#" class="old" onclick="showdeleteddata()">
+                            <!-- <div href="#" class="old" onclick="showdeleteddata()">
                                 <p>Old Students</p>
-                            </div>
+                            </div> -->
 
 
 
@@ -78,22 +78,7 @@
                             <label for="age">Age</label>
                             <input type="number" name="name" class="form-control" id="age" placeholder="Enter Age" />
                         </div>
-                        <!-- <div class="form-group col-md-6 mb-3">
-                            <label for="standard">Standard</label>
-                            <input type="text" name="name" class="form-control" id="standard" placeholder="Enter Standard" />
-                        </div> -->
-                        <!-- <div class="form-group col-md-6 mb-3 drop">
-                            <label for="standard">Standard</label>
-
-                            <select name="cars" id="standard" placeholder="selection">
-                                <option value="">Select Standard</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                            </select>
-                        </div> -->
+                        
                         <div class="form-group col-md-6 mb-3">
                             <label for="phnumber">Phone Number</label>
                             <input type="number" name="name" class="form-control" id="phnumber"
@@ -125,26 +110,7 @@
                     </div>
                 </div>
                 <hr>
-                <!-- <div class="newtables row mt-5">
-                    <div class="col-12">
-                        <table class="table " id="datatable">
-                            <thead>
-                                <tr>
-                                    <th>FirstName</th>
-                                    <th>LastName</th>
-                                    <th>Age</th>
-                                    <th>Standard</th>
-                                    <th>Location</th>
-                                    <th>E-mail</th>
-                                    <th>Action</th>
 
-
-                                </tr>
-                            </thead>
-                            <tbody></tbody>
-                        </table>
-                    </div>
-                </div> -->
             </div>
             <div class="currentclasscontent">
                 <nav id="dev-nav">
@@ -152,9 +118,15 @@
 
 
                     <div class="rightnav">
-                        <div class="search"><input class="inputcontent1" type="text" placeholder="Enter Student Name"
-                                aria-label="Search" onkeyup="searchStudent()">
-                            <button class="bttn" class="currentstudentsearch" onclick="search()">Search</button>
+                        <div class="search"><input class="inputcontent" type="text" placeholder="Enter Student Name"
+                                aria-label="Search" onkeyup="search()">
+                            <select id="city" class="inputcontent1" name="city" onchange="search()">
+                                <option value="">-- Search options --</option>
+                                <option value="First-Name">First-Name</option>
+                                <option value="PhoneNumber">PhoneNumber</option>
+                                <option value="Email">Email</option>
+                            </select>
+                            <!-- <button class="bttn" class="currentstudentsearch" onclick="">Search</button> -->
                         </div>
 
                     </div>

@@ -366,6 +366,19 @@ select {
 
 }
 
+.inputcontent1 {
+    
+    padding-inline: 10px;
+    padding-block: 8px;
+    background-color: rgb(0, 125, 254);
+    color: #ffffff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    font-size: large;
+    border: none;
+}
+
 .search input {
     border-radius: 5px;
     padding-inline: 10px;
